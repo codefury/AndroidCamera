@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aviary.android.feather.sdk.widget.AviaryBottomBarViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/AviaryWidget.BottomBar.ViewFlipper">
+
+	<!-- tools panel -->
+	<LinearLayout
+		android:id="@+id/aviary_tool_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<it.sephiroth.android.library.widget.HListView
+			android:id="@+id/aviary_tools_listview"
+			style="@style/AviaryWidget.BottomBar.HorizontalScrollView"
+			android:drawSelectorOnTop="true"
+			android:listSelector="@drawable/aviary_tool_layout_background"
+			android:layout_width="match_parent"
+			android:layout_height="0dip"
+			android:layout_weight="1" />
+
+		<LinearLayout
+			style="@style/AviaryWidget.BottomBar.Logo.Container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="0">
+
+			<ImageView
+				android:scaleType="centerInside"
+				android:adjustViewBounds="true"
+				android:id="@+id/aviary_white_logo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- options panel -->
+	<FrameLayout
+		android:id="@+id/aviary_content_view"
+		style="@style/AviaryWidget.BottomBar.OptionPanel"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+</com.aviary.android.feather.sdk.widget.AviaryBottomBarViewFlipper>
+<!-- From: file:/Users/crugnola/Documents/git/aviary/Android-SDK/aviary-sdk/src/main/res/layout/aviary_bottombar.xml --><!-- From: file:/D:/work/JuneR5/CreativeSDKRoot/creativesdk/CreativeSDKImage/src/main/res/layout/aviary_bottombar.xml -->

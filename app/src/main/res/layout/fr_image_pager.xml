@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33ffffff" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#11111111"
+        android:padding="4dp">
+
+        <ImageButton
+            android:id="@+id/imageShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/share_from_image_pager"
+            android:scaleType="centerInside"
+            android:src="@drawable/rippleoval" />
+
+        <ImageButton
+            android:id="@+id/imageEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toLeftOf="@+id/imageShare"
+            android:background="@drawable/edit_from_pager"
+            android:scaleType="centerInside"
+            android:src="@drawable/rippleoval" />
+
+        <ImageButton
+            android:id="@+id/imageDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/imageShare"
+            android:background="@drawable/deleteimage"
+            android:scaleType="centerInside"
+            android:src="@drawable/rippleoval" />
+    </RelativeLayout>
+</FrameLayout>

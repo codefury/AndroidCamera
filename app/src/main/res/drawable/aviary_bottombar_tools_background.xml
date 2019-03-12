@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item>
+		<color android:color="@color/foregroundTheme" />
+	</item>
+
+	<item android:top="@dimen/aviary_nav_divider">
+		<shape android:shape="rectangle">
+			<solid android:color="@color/foregroundTheme" />
+		</shape>
+	</item>
+
+	<item android:top="@dimen/aviary_nav_divider_double">
+		<shape android:shape="rectangle">
+			<gradient
+				android:angle="90"
+				android:endColor="@color/foregroundTheme"
+				android:startColor="@color/foregroundTheme" />
+		</shape>
+	</item>
+
+</layer-list><!-- From: file:/Users/crugnola/Documents/git/aviary/Android-SDK/aviary-sdk/src/main/res/drawable/aviary_bottombar_tools_background.xml --><!-- From: file:/D:/work/JuneR5/CreativeSDKRoot/creativesdk/CreativeSDKImage/src/main/res/drawable/aviary_bottombar_tools_background.xml -->

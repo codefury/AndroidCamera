@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/frameLayout"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="horizontal">
+
+    <FrameLayout
+            android:id="@+id/frameCamera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <SurfaceView
+                android:id="@+id/camera_preview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+    </FrameLayout>
+
+    <com.codefury16.androidcamera.TextViewThin
+            android:id="@+id/cameraText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hey"
+            android:textColor="#111111"
+            android:textSize="48dp"/>
+
+    <RelativeLayout
+            android:id="@+id/cameraButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="#EEEEEE">
+
+        <ImageButton
+                android:id="@+id/button_gallery"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rippleoval"
+                android:padding="22dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/gallery"/>
+
+        <ImageButton
+                android:id="@+id/button_timer"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_gallery"
+                android:background="@drawable/rippleoval"
+                android:padding="22dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/timer"/>
+
+        <ImageButton
+                android:id="@+id/button_capture"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_timer"
+                android:background="@drawable/rippleoval"
+                android:gravity="center"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/shoot"/>
+
+        <ImageButton
+                android:id="@+id/button_flash"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_capture"
+                android:background="@drawable/rippleoval"
+                android:padding="22dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flashoff"/>
+
+        <ImageButton
+                android:id="@+id/button_ChangeCamera"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/button_flash"
+                android:background="@drawable/rippleoval"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flip"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/stopTimerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+        <ImageButton
+                android:id="@+id/stopTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rippleoval"
+                android:src="@drawable/close"/>
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/focusImage"
+            android:src="@drawable/focuscamera"/>
+</FrameLayout>

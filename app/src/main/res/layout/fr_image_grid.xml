@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#33000000">
+    <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:horizontalSpacing="2dip"
+            android:numColumns="3"
+            android:padding="2dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2dip"
+            android:background="#99000000"
+    />
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coffee"
+                android:src="@drawable/coffee_empty_gallery"
+                android:layout_gravity="center"
+                android:layout_marginBottom="28dp"
+                android:layout_above="@+id/empty"
+                android:layout_centerHorizontal="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/empty"
+                android:text="Hey, where's your collection?\nClick here to get some selfies."
+                android:textSize="20dp"
+                android:textColor="#99FFFFFF"
+                android:layout_gravity="center"
+                android:layout_above="@+id/arrow"
+                android:layout_centerHorizontal="true"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arrow"
+                android:src="@drawable/arrow_empty_gallery"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="center"
+        />
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabgallery"
+            android:src="@drawable/camera_icon_gallery"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="20dp"/>
+
+</FrameLayout>

@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Android Camera</string>
+    <string name="button_image_grid">GridView</string>
+    <string name="feather_about_dialog_message">CODEFURY</string>
+    <string name="feather_edit_your_photo">Editor</string>
+    <string name="feather_adjust">Rotate</string>
+    <string name="feather_stickers">#hashtag</string>
+    <string name="feather_tool_lighting">Lights</string>
+    <string-array name="aviary_crop_labels">
+        <item>@string/feather_original</item>
+        <item>@string/feather_square</item>
+        <item>@string/feather_custom</item>
+        <item>3:2</item>
+        <item>4:3</item>
+        <item>5:3</item>
+        <item>5:4</item>
+    </string-array>
+    <string-array name="aviary_crop_values">
+        <item>-1:-1</item>
+        <item>1:1</item>
+        <item>0:0</item>
+        <item>3:2</item>
+        <item>4:3</item>
+        <item>5:3</item>
+        <item>5:4</item>
+    </string-array>
+
+    <string name="feather_save">Save</string>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:right">20dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:textColor">#730254</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AviaryWidget.BottomBar.Logo.Container">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+    </style>
+    <style name="AviaryWidget.BottomBar.HorizontalScrollView">
+        <item name="android:background">@drawable/aviary_bottombar_tools_background</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="hlv_dividerWidth">16dip</item>
+        <item name="hlv_stackFromRight">false</item>
+        <item name="android:smoothScrollbar">false</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:choiceMode">none</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="AviaryWidget.TextView.NavTitle">
+        <item name="android:textAppearance">?aviaryTextAppearanceLarge</item>
+        <item name="aviary_typeface">?attr/aviaryFontLight</item>
+        <item name="android:inAnimation">@android:anim/slide_in_left</item>
+        <item name="android:outAnimation">@android:anim/slide_out_right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/darktheme</item>
+    </style>
+
+    <style name="AviaryWidget.NavBar.Divider">
+        <item name="android:layout_width">@dimen/aviary_nav_divider_double</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+    </style>
+    <style name="AviaryWidget.Button.NavButton">
+        <item name="android:textAppearance">?aviaryTextAppearanceMedium</item>
+        <item name="android:background">@drawable/aviary_nav_button_background</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:paddingTop">13dip</item>
+        <item name="android:paddingBottom">14dip</item>
+        <item name="android:textColor">@color/darktheme</item>
+    </style>
+    <style name="AviaryWidget.Button" parent="@style/AviaryWidget.TextView">
+        <item name="android:textAppearance">?attr/aviaryTextAppearance</item>
+        <item name="android:textColor">@color/aviary_button_text_color</item>
+        <item name="aviary_typeface">?attr/aviaryFontRegular</item>
+        <item name="android:background">@drawable/aviary_blue_button_background</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:paddingTop">14dip</item>
+        <item name="android:paddingBottom">14dip</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColorLink">@color/aviary_link_text_default_inverted</item>
+    </style>
+
+    <style name="AviaryWidget.HighlightImageView.Tool">
+        <item name="android:paddingTop">4dip</item>
+        <item name="aviary_highlightColorPressed">#f1f1f1</item>
+        <item name="aviary_highlightColorChecked">#f1f1f1</item>
+        <item name="aviary_glowMode">pressed</item>
+        <item name="aviary_highlightMode">pressed</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="AviaryWidget.Button.NavButton.Apply">
+        <item name="android:drawablePadding">0dip</item>
+    </style>
+
+    <style name="AviaryWidget.TextView.Tool">
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:textSize">@dimen/aviary_textSizeTools</item>
+        <item name="aviary_typeface">?attr/aviaryFontRegular</item>
+        <item name="android:textColor">@color/darktheme</item>
+    </style>
+
+    <style name="AviaryWidget.EffectThumb.Text">
+        <item name="android:textAppearance">?aviaryTextAppearanceSmallNoSelection</item>
+        <item name="aviary_typeface">?attr/aviaryFontRegular</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">@dimen/aviary_effect_thumb_margin_bottom</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:textColor">@color/darktheme</item>
+    </style>
+    <style name="AviaryGraphics.CropHighlightView">
+        <item name="aviary_strokeWidth">@dimen/aviary_crop_stroke_width</item>
+        <item name="aviary_strokeWidth2">@dimen/aviary_crop_stroke_internal_width</item>
+        <item name="aviary_strokeColor">@color/aviary_crop_stroke_color</item>
+        <item name="aviary_strokeColor2">@color/aviary_crop_stroke_color_pressed</item>
+        <item name="aviary_strokeColor3">@color/aviary_crop_stroke_internal_color</item>
+        <item name="aviary_strokeColor4">@color/aviary_crop_stroke_internal_color_pressed</item>
+        <item name="aviary_color1">@color/aviary_crop_fill_color</item>
+        <item name="aviary_color2">@color/aviary_crop_fill_color_pressed</item>
+        <item name="android:src">@drawable/aviary_knob_selector</item>
+    </style>
+
+    <style name="AviaryWidget.NavBar.Main">
+        <item name="android:height">?attr/actionBarSize</item>
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:animationCache">true</item>
+        <item name="android:background">@drawable/aviary_nav_background</item>
+        <item name="android:drawingCacheQuality">auto</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">@dimen/aviary_nav_divider</item>
+    </style>
+
+</resources>

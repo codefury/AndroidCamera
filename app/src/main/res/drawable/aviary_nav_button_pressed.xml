@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="0"
+                android:centerX="50%p"
+                android:centerY="50%p"
+                android:gradientRadius="100"
+                android:endColor="#fff8f7f5"
+                android:startColor="#ffe3dfda"
+                android:type="radial" />
+        </shape>
+    </item>
+
+</layer-list><!-- From: file:/Users/crugnola/Documents/git/aviary/Android-SDK/aviary-sdk/src/main/res/drawable/aviary_nav_button_pressed.xml --><!-- From: file:/D:/work/JuneR5/CreativeSDKRoot/creativesdk/CreativeSDKImage/src/main/res/drawable/aviary_nav_button_pressed.xml -->
